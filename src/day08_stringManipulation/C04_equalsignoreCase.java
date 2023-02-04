@@ -1,0 +1,52 @@
+package day08_stringManipulation;
+
+public class C04_equalsignoreCase {
+    public static void main(String[] args) {
+
+        String str1 = "Pazar";
+
+        String str2 = "PAZAR";
+
+        String str3 = "pazar";
+
+        String str4 = "PaZaR";
+
+        System.out.println(str1==str2);  // false
+
+        System.out.println(str1==str3); // false
+
+        System.out.println(str1==str4); // false
+
+
+        System.out.println(str1.equals(str2)); // false
+
+        System.out.println(str1.equals(str3)); // false
+
+        System.out.println(str1.equals(str2));  // false
+
+
+        /*
+        Eger ikim etin KARSILASTIRILIRKEN buyuk harf-kucuk harf duyarliligi (case sensitivity)
+        onemsiz ise o zaman,
+        equalsIgnoreCase() kullanilir
+
+         */
+
+
+        System.out.println(str1.equalsIgnoreCase(str2)); // true
+
+        System.out.println(str1.equalsIgnoreCase(str3)); // true
+
+        System.out.println(str1.equalsIgnoreCase(str2));  // true
+
+
+
+
+
+
+
+
+
+
+    }
+}
